@@ -9,30 +9,31 @@
 
 /* Responsividade */
 
-/* Laptop Grande e acima */
+/* ---------- Breakpoint 1 ---------- */
 @media only screen and (max-width:1440px){
-    .grid{       
-        grid-template-columns: repeat(3, 1fr);    
-    }
+
+    .grid{  grid-template-columns: repeat(3, 1fr);  }
 }
 
-/* Laptop */
+
+/* ---------- Breakpoint 2 ---------- */
 @media only screen and (max-width:1024px){
-    .grid{       
-        grid-template-columns: repeat(3, 1fr);    
-    }
+
+    .grid{  grid-template-columns: repeat(3, 1fr);  }
 }
 
-/* Tablets */
+
+/* ---------- Breakpoint 3 ---------- */
 @media only screen and (max-width:768px){
-    .grid{       
-        grid-template-columns: repeat(2, 1fr);    
-    }
+
+    .grid{  grid-template-columns: repeat(2, 1fr);  }
 }
 
-/* Celulares */  
-@media only screen and (max-width:425px){
-    .grid{       
-        grid-template-columns: 1fr; 
-    }
+
+/* ---------- Breakpoint 4 ---------- */
+@media only screen and (max-width:555px){
+
+    .grid{  grid-template-columns: 1fr;  }
 }
+
+

@@ -25,6 +25,7 @@ window.onscroll = () => scrollPage();
 function scrollPage() {
 
 // --------- ANIMAÇÃO DO NAV-TOP ---------
+
     var navbar = document.getElementById("nav-top");
     var btn = document.getElementsByClassName("nav-top__btn");
 
@@ -39,6 +40,7 @@ function scrollPage() {
 
 
 // --------- ANIMAÇÃO DO GRID - SEÇÃO 1 ---------
+
     var grid = document.getElementById("main-content__grid");
 
     if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
@@ -50,6 +52,7 @@ function scrollPage() {
 
 
 // --------- ANIMAÇÃO DA IMAGEM - SEÇÃO 3 ---------
+
     var mainContentPicture = document.getElementById("main-content__picture");
     
      if (document.body.scrollTop > 1800 || document.documentElement.scrollTop > 1800) {
@@ -61,6 +64,7 @@ function scrollPage() {
 
 
 // --------- ANIMAÇÃO DA IMAGEM - SEÇÃO 4 ---------
+
     var pictureSmallSection4 = document.getElementsByClassName("main-content__section--4__picture");
     var pictureBigSection4 = document.getElementsByClassName("main-content__section--4__picture--lg");
 
@@ -77,7 +81,7 @@ function scrollPage() {
 
 
 
-// Adiciona e Remove Classe
+// Adiciona E remove Classe
 function itensAddRemoveClass(item, classAdd, classRemove) {
     for (var i = 0; i < item.length; i++) {
         item[i].classList.add(classAdd);
@@ -88,7 +92,7 @@ function itensAddRemoveClass(item, classAdd, classRemove) {
 
 
 
-// adiciona OU remove classe
+// Adiciona OU remove classe
 function removeOrAddClass(item, className, boll) {
     if(boll){
         for (var i = 0; i < item.length; i++) {            

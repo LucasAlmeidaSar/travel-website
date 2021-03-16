@@ -6,9 +6,7 @@
 }
 
 
-html{
-    scroll-behavior: smooth;    
-}
+html{  scroll-behavior: smooth;  }
 
 
 body{      
@@ -61,20 +59,17 @@ body{
     transition: all .3s ease;
 }
 
-.btn:hover{ background: var(--cor-btn-hover);}
+.btn:hover{ background: var(--cor-btn-hover);  }
 
 
-.btn--opaco{
-    background: var(--cor-btn-opaco);     
-}
+.btn--opaco{  background: var(--cor-btn-opaco);  }
 
-.btn--opaco:hover{ background: var(--cor-btn-opaco-hover);}
+.btn--opaco:hover{ background: var(--cor-btn-opaco-hover);  }
 
-.btn--nav{
-    background: transparent;     
-}
 
-.btn--nav:hover{ background: var(--cor-secundaria);}
+.btn--nav{  background: transparent;  }
+
+.btn--nav:hover{ background: var(--cor-secundaria);  }
 
 
 
@@ -84,8 +79,8 @@ body{
     width: 100%;
     height: 363px;        
     border-radius: 10px;
-    background: #F5F5F5; 
-    box-shadow: 0 5px 10px grey , 0 5px 10px grey ;  
+    background: var(--cor-card); 
+    box-shadow: 0 5px 10px var(--cor-card-boxshadow) , 0 5px 10px var(--cor-card-boxshadow);
 }
 
 .card__picture{
@@ -98,7 +93,7 @@ body{
 .card__description{
     width: 100%;
     height: 15%;
-    background: white;
+    background: var(--cor-clara);
     border-radius: 0 0 10px 10px;
     justify-content: flex-start;
     padding: 0 20px;
@@ -111,7 +106,7 @@ body{
 }
 .card__subtitle{
     text-align: left;
-    color: #222;
+    color: var(--cor-escura);
 }
 
 
@@ -137,18 +132,15 @@ body{
     transition: all .3s ease;
 }
 
-.link:hover{    
-    color: var(--cor-terciaria);   
-}
+.link:hover{  color: var(--cor-terciaria);  }
+
 
 .link--secundario{    
     display: inline-block;
     color: var(--cor-clara);    
 }
 
-.link--secundario:hover{    
-    color: var(--cor-btn-hover);   
-}
+.link--secundario:hover{  color: var(--cor-btn-hover);  }
 
 
 
@@ -161,14 +153,9 @@ body{
     transition: all .3s ease;
 }
 
-.icon:hover{
-    color: var(--cor-primaria);
-}
+.icon:hover{  color: var(--cor-primaria);  }
 
-.icon--secundario{
-    color: var(--cor-clara);
-}
 
-.icon--secundario:hover{
-    color: var(--cor-btn-hover)
-}
+.icon--secundario{  color: var(--cor-clara);  }
+
+.icon--secundario:hover{  color: var(--cor-btn-hover)  }

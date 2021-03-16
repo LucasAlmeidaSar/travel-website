@@ -10,9 +10,11 @@
     <link rel="stylesheet" href="css/cores.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/menu.css">
-    <script src="https://kit.fontawesome.com/2454d969d0.js" crossorigin="anonymous"></script>               
+    <script src="https://kit.fontawesome.com/2454d969d0.js" crossorigin="anonymous"></script>      
+    <link rel="stylesheet" href="css/grid.css">         
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/responsividade.css">
+    
     <title>Travel</title>
 </head>
 
@@ -22,29 +24,35 @@
 <body>          
 
    <!-- Cabeçalho -->
-   <header class="[ header-page  header-page--pre-load ] flex" id="header-page"> 
+   <header class="[ header-page  header-page--pre-load ] flex" id="header-page">        
 
-    <!-- Navegação -->
-   <nav class="[ nav-top nav-top--pre-load ] flex"  id="nav-top">
-       <a href="#" class="[ btn btn--nav ] nav-top__btn  animate">Travel.com</a>
-       <ul class="nav-top__list flex">
-           <li class="list"><a href="#" class="[ btn btn--nav ] nav-top__btn">Página Inicial</a></li>
-           <li class="list"><a href="#section--1" class="[ btn btn--nav ] nav-top__btn">Seção 1</a></li>
-           <li class="list"><a href="#section--4" class="[ btn btn--nav ] nav-top__btn">Seção 2</a></li>
-       </ul>
-   </nav>
-   
-   <!-- Conteúdo do Cabeçalho -->
-   <div class="header-page__content flex">
-       <h1 class="header-page__title   header-page__title--pre-load" id="header-page__title">Travel</h1>
-       <p class="header-page__subtitle  header-page__subtitle--pre-load" id="header-page__subtitle">Um site demonstrativo para fixação de conhecimentos em desenvolvimento front-end</p>
-   </div>
+        <!-- Navegação -->
+        <nav class="[ nav-top nav-top--pre-load ] flex"  id="nav-top">
+
+            <a class="[ btn  btn--nav ] nav-top__btn  animate" href="#">Travel.com</a>
+
+            <ul class="nav-top__list  flex">
+                <li class="list"><a class="[ btn btn--nav ] nav-top__btn" href="#" >Página Inicial</a></li>
+                <li class="list"><a class="[ btn btn--nav ] nav-top__btn" href="#section--1">Seção 1</a></li>
+                <li class="list"><a class="[ btn btn--nav ] nav-top__btn" href="#section--4">Seção 2</a></li>
+            </ul>
+
+        </nav>
+    
+        <!-- Conteúdo do Cabeçalho -->
+        <div class="header-page__content  flex">
+
+            <h1 class="header-page__title   header-page__title--pre-load" id="header-page__title">Travel</h1>
+
+            <p class="header-page__subtitle  header-page__subtitle--pre-load" id="header-page__subtitle">Um site demonstrativo para fixação de conhecimentos em desenvolvimento front-end</p>
+        
+        </div>
 </header>
 
 
 
 
-<!-- Conteúdo principal -->
+<!-- Conteúdo principal da Página -->
 <main class="main-content">
 
    <!-- Seção 1 -->
@@ -60,22 +68,27 @@
                <img class="card__picture" src="img/SantoriniGreece.jpeg" alt="">
                <span class="card__description flex"> <i class="card__icon fas fa-map-marker-alt"></i> <p class="card__subtitle">San Torini, Grécia</p></span>
            </div>
+
            <div class="card">
                <img class="card__picture" src="img/VernazzaItaly.jpeg" alt="">
                <span class="card__description flex"> <i class="card__icon fas fa-map-marker-alt"></i> <p class="card__subtitle">Vernazza, Itália</p></span>
            </div>
+
            <div class="card">
                <img class="card__picture" src="img/SanFranciscoCalifornia.jpeg" alt="">
                <span class="card__description flex"> <i class="card__icon fas fa-map-marker-alt"></i> <p class="card__subtitle">São Francisco, Califórnia</p></span>
            </div>
+
            <div class="card">
                <img class="card__picture" src="img/NavagioGreece.jpeg" alt="">
                <span class="card__description flex"> <i class="card__icon fas fa-map-marker-alt"></i> <p class="card__subtitle">Navagio, Grécia</p></span>
            </div>
+
            <div class="card">
                <img class="card__picture" src="img/AoNangThailand.jpeg" alt="">
                <span class="card__description flex"> <i class="card__icon fas fa-map-marker-alt"></i> <p class="card__subtitle">Ao Nang, Tailândia</p></span>
            </div>
+
            <div class="card">
                <img class="card__picture" src="img/PhiPhiIslandsThailand.jpeg" alt="">
                <span class="card__description flex"> <i class="card__icon fas fa-map-marker-alt"></i> <p class="card__subtitle">Ilha Phi Phi, Tailândia</p></span>
@@ -89,36 +102,41 @@
 
    <!-- Seção 2 -->
    <div class=" [ main-content__section  main-content__section--2 ]">
+
        <h3 class="main-content__section__title">Tours por Categorias</h3>
 
-       <div class="main-content__section--2__container grid">
-          
+       <div class="main-content__section--2__container grid">          
 
            <div class="main-content__section--2__col">                    
               <ul>               
-                   <li class="list"><a href="#" class=" link  main-content__section--2__link">Atividades ao ar livre</a></li>
-                   <li class="list"><a href="#" class=" link  main-content__section--2__link">Tours culturais e temáticos</a></li>
-                   <li class="list"><a href="#" class=" link  main-content__section--2__link">Tours para a família</a></li>
-                   <li class="list"><a href="#" class=" link  main-content__section--2__link">Tours de férias e sazonais</a></li>
+                   <li class="list"><a class=" link  main-content__section--2__link" href="#" >Atividades ao ar livre</a></li>
+                   <li class="list"><a class=" link  main-content__section--2__link" href="#" >Tours culturais e temáticos</a></li>
+                   <li class="list"><a class=" link  main-content__section--2__link" href="#" >Tours para a família</a></li>
+                   <li class="list"><a class=" link  main-content__section--2__link" href="#" >Tours de férias e sazonais</a></li>
               </ul>
            </div>
+
            <div class="main-content__section--2__col">
                <ul>                               
-                   <li class="list"><a href="#" class=" link  main-content__section--2__link">Tours por cidade</a></li>
-                   <li class="list"><a href="#" class=" link  main-content__section--2__link">Tours de luxo</a></li>
-                   <li class="list"><a href="#" class=" link  main-content__section--2__link">Tours para relaxar</a></li>
-                   <li class="list"><a href="#" class=" link  main-content__section--2__link">Tours de aventura e selvagens</a></li>
+                   <li class="list"><a class=" link  main-content__section--2__link" href="#" >Tours por cidade</a></li>
+                   <li class="list"><a class=" link  main-content__section--2__link" href="#" >Tours de luxo</a></li>
+                   <li class="list"><a class=" link  main-content__section--2__link" href="#" >Tours para relaxar</a></li>
+                   <li class="list"><a class=" link  main-content__section--2__link" href="#" >Tours de aventura e selvagens</a></li>
                </ul>
            </div>
+
            <div class="main-content__section--2__col">
+
                <h3 class="main-content__section--2__title">Newsletter</h3>
                <p class="main-content__section--2__subtitle">Inscreva-se para atualizações e promoções</p>
-               <input type="email" name="email" id="email" class="main-content__section--2__input" placeholder="Insira um e-mail válido" required>
-               <input type="submit" value="Enviar" class="btn  main-content__section--2__btn">
+               <input class="main-content__section--2__input" type="email" name="email" id="email"  placeholder="Insira um e-mail válido" required>
+               <input class="btn  main-content__section--2__btn" type="submit" value="Enviar" >
+
                <ul class="main-content__section--2__list  flex">
                    <li class="list"><a href="#" class="icon"><i class="fab fa-linkedin-in"></i></a></li>
                    <li class="list"><a href="#" class="icon"><i class="fab fa-github"></i></a></li>
                </ul>
+
            </div>
 
        </div>
@@ -154,13 +172,15 @@
    <div class="main-content__section" id="section--4">
        <h2 class="main-content__title-lg">Porque nos escolher ?</h2>
        <p class="main-content__subtitle">Partir para terras desconhecidas, desbravar novos horizontes, conhecer culturas e povos de todo o mundo é o que nos move.</p>
+       
        <div class="main-content__section--4__grid">
-           <img id="section--4__picture--1"  class="picture  main-content__section--4__picture--lg  main-content__section--4__picture--lg--scroll " src="img/Polynesia.jpg" alt="">
-           <img id="section--4__picture--2"  class="picture  main-content__section--4__picture  main-content__section--4__picture--scroll " src="img/Japan.jpg" alt="">
-           <img id="section--4__picture--3"  class="picture  main-content__section--4__picture  main-content__section--4__picture--scroll " src="img/queen-of-liberty-202218_1920.jpg" alt="">
-           <img id="section--4__picture--4"  class="picture  main-content__section--4__picture  main-content__section--4__picture--scroll " src="img/torreEifel.jpg" alt="">
-           <img id="section--4__picture--5"  class="picture  main-content__section--4__picture  main-content__section--4__picture--scroll " src="img/sunrise-938998_1920.jpg" alt="">
+           <img class="picture  main-content__section--4__picture--lg  main-content__section--4__picture--lg--scroll " src="img/Polynesia.jpg" alt="">
+           <img class="picture  main-content__section--4__picture  main-content__section--4__picture--scroll " src="img/Japan.jpg" alt="">
+           <img class="picture  main-content__section--4__picture  main-content__section--4__picture--scroll " src="img/queen-of-liberty-202218_1920.jpg" alt="">
+           <img class="picture  main-content__section--4__picture  main-content__section--4__picture--scroll " src="img/torreEifel.jpg" alt="">
+           <img class="picture  main-content__section--4__picture  main-content__section--4__picture--scroll " src="img/sunrise-938998_1920.jpg" alt="">
        </div>
+
    </div>
   
 </main>
@@ -178,12 +198,10 @@
    <ul class="flex">
        <li class="list"><a href="#" class="icon icon--secundario"><i class="fab fa-linkedin-in"></i></a></li>
        <li class="list"><a href="#" class="icon icon--secundario"><i class="fab fa-github"></i></a></li>     
-       <li class="list"><a href="#" class=" [ btn btn--opaco ]  footer-content__btn  "><i class="center   fas fa-arrow-up"></i></a></li>       
+       <li class="list"><a href="#" class=" [ btn  btn--opaco ]  footer-content__btn  "><i class="center   fas fa-arrow-up"></i></a></li>       
    </ul>      
-  
    
 </footer>
-
 
 
 

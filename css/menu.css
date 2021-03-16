@@ -1,4 +1,4 @@
-/* Não sendo celulares */
+
 @media only screen and (max-width: 2560px){
     .nav-top{
         position: fixed;
@@ -9,8 +9,7 @@
         justify-content: space-around;  
         transform: scale(1);  
         opacity: 1;
-        transition: background-color 1s ease, height 1s ease, opacity 1.5s 1s ease-in , transform 1s 1s ease;
-       
+        transition: background-color 1s ease, height 1s ease, opacity 1.5s 1s ease-in , transform 1s 1s ease;       
     }
     
     .nav-top__btn{
@@ -23,22 +22,44 @@
 
     .nav-top--scroll{
         background-color: var(--cor-primaria);
-        height: 50px;         
+        height: 50px;             
     }
+
+    .nav-top--scroll .nav-top__btn{  font-size: 1rem ;  }
 
     .nav-top--pre-load{
         opacity: 0;
         transform: scale(.5);
     }
 } 
- 
 
 
-/* Celulares */
-@media only screen and (max-width: 425px){
 
-    .nav-top{
-        display: none;
-    }
+
+/* ---------- Breakpoint 1 ---------- */
+@media only screen and (max-width: 870px){
+
+    .nav-top__btn{  font-size: 1.1rem;  } 
+         .nav-top{  height: 60px;  }      
+
+}
+
+
+
+
+/* ---------- Breakpoint 2 ---------- */
+@media only screen and (max-width: 700px){
+
+    .nav-top__btn{  padding: 15px 15px;  }      
+
+}
+
+
+
+
+/* ---------- Breakpoint 3 ---------- */
+@media only screen and (max-width: 555px){
+
+    .nav-top{  display: none;  }
     
 }
