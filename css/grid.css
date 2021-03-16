@@ -1,0 +1,38 @@
+/* Display para reuso */
+.grid{
+    display: grid;   
+    grid-template-columns: repeat(3, 1fr);    
+  }
+
+
+
+
+/* Responsividade */
+
+/* Laptop Grande e acima */
+@media only screen and (max-width:1440px){
+    .grid{       
+        grid-template-columns: repeat(3, 1fr);    
+    }
+}
+
+/* Laptop */
+@media only screen and (max-width:1024px){
+    .grid{       
+        grid-template-columns: repeat(3, 1fr);    
+    }
+}
+
+/* Tablets */
+@media only screen and (max-width:768px){
+    .grid{       
+        grid-template-columns: repeat(2, 1fr);    
+    }
+}
+
+/* Celulares */  
+@media only screen and (max-width:425px){
+    .grid{       
+        grid-template-columns: 1fr; 
+    }
+}

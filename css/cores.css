@@ -1,0 +1,18 @@
+:root{
+--cor-clara: white;
+--cor-escura: #222;
+--cor-neutra: rgb(242, 242, 242);
+--cor-primaria: #058bd6;
+--cor-secundaria: rgba(71, 138, 201, .40);
+--cor-terciaria: rgb(76, 115, 151);
+
+
+--cor-btn: rgb(56, 124, 189);
+--cor-btn-hover:rgb(13, 95, 172);
+--cor-btn-opaco: transparent;
+--cor-btn-opaco-hover: rgba(255,255,255,.3);
+--cor-fundo: #e9f2fa;
+--cor-icone: rgb(153, 153, 153);
+--cor-footer: rgb(5, 139, 214);
+--cor-input: rgb(153, 153, 153);
+}
