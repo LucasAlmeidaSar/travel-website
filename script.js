@@ -106,3 +106,15 @@ function removeOrAddClass(item, className, boll) {
     }    
 }
 
+
+
+const alternador = document.querySelector('.js-alternador');
+const menuOffCanvas = document.querySelector('.js-menuOffCanvas');
+const hamburguerLine = document.querySelector('.js-hamburguerLine')
+
+alternador.addEventListener( 'click' , toggleMenu);
+
+function toggleMenu(){
+    menuOffCanvas.classList.toggle('is-active');    
+    hamburguerLine.classList.toggle('is-active');
+}

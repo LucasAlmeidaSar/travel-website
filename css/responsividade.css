@@ -69,6 +69,9 @@
         margin-bottom: 30px;
     }
 
+    .nav-top--scroll {  height: 40px;  }
+    .nav-top--scroll .nav-top__btn {  padding: 5px 30px;  }
+
     /* Seção 1 */
     .main-content__grid{  
         grid-template-columns: repeat(2, 1fr);
