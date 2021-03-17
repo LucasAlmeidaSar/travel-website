@@ -180,7 +180,7 @@
     /* Seção 4 */
     .main-content__section--4__grid{
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(5,20%);
+        grid-template-rows: repeat(5, 1fr);
     }
 
     .main-content__section--4__picture--lg{    
