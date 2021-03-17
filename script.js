@@ -33,7 +33,7 @@ function scrollPage() {
         navbar.classList.add("nav-top--scroll");
         itensAddRemoveClass(btn, "btn--opaco", "btn--nav");
     } else {
-        navbar.classList.remove("nav-top--scroll");
+        navbar.classList.remove("nav-top--scroll");      
         itensAddRemoveClass(btn, "btn--nav", "btn--opaco");
     }
 
@@ -80,8 +80,8 @@ function scrollPage() {
 }
 
 
+// ---------- Funções auxiliares ----------
 
-// Adiciona E remove Classe
 function itensAddRemoveClass(item, classAdd, classRemove) {
     for (var i = 0; i < item.length; i++) {
         item[i].classList.add(classAdd);
@@ -92,12 +92,10 @@ function itensAddRemoveClass(item, classAdd, classRemove) {
 
 
 
-// Adiciona OU remove classe
 function removeOrAddClass(item, className, boll) {
     if(boll){
         for (var i = 0; i < item.length; i++) {            
-            item[i].classList.remove(className);
-            console.log(item[i]);
+            item[i].classList.remove(className);            
         }
     }else{
         for (var i = 0; i < item.length; i++) {            
@@ -108,13 +106,42 @@ function removeOrAddClass(item, className, boll) {
 
 
 
-const alternador = document.querySelector('.js-alternador');
-const menuOffCanvas = document.querySelector('.js-menuOffCanvas');
-const hamburguerLine = document.querySelector('.js-hamburguerLine')
 
+// ---------- MENU ESCONDIDO ----------
+let alternador = document.querySelector('.js-alternador');
+let menuOffCanvas = document.querySelector('.js-menuOffCanvas');
+let hamburguerLine = document.querySelector('.js-hamburguerLine')
+
+
+// Ativar e desativar menu
 alternador.addEventListener( 'click' , toggleMenu);
 
 function toggleMenu(){
     menuOffCanvas.classList.toggle('is-active');    
     hamburguerLine.classList.toggle('is-active');
 }
+
+
+// Ao clicar nos links do menu
+let headerLinks = document.querySelectorAll(".header-page__link")
+
+    for (const link of headerLinks) {
+        link.addEventListener('click' , activeLink )
+    }
+
+    function activeLink(){
+        toggleMenu()
+    }
+
+
+// Ao redimensionar a tela
+window.addEventListener('resize' , widthWindow)
+
+    function widthWindow(){
+        let width = window.innerWidth
+        
+        if(width > 554){
+            menuOffCanvas.classList.remove('is-active')
+            hamburguerLine.classList.remove('is-active')
+        }
+    }

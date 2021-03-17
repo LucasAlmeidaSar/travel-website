@@ -11,12 +11,31 @@
         height: 100vh;
          width: 100vw; 
         background: linear-gradient(to bottom, #7474bf, #348ac7);
-        transform: translateX(-100%);
+        transform: translateX(-200%);
         transition: all .8s cubic-bezier(0.63, -0.12, 0.43, 1.26);
     }
 
     .header-page__hamburguer{  display: none;  }
 
+    .header-page__list{  list-style-type: none;  }
+
+    .header-page__link{
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 20px 30px;
+        margin-bottom: 40px;
+        background-color: rgba(252, 252, 252, 0.2);
+        border-radius: 10px;
+        text-align: center;
+        font-size: 1.2rem;
+        transition: all .3s ease;
+    }
+
+    .header-page__link:hover{ background-color: rgba(252, 252, 252, 0.4);}
+
+
+    
 
     /* Menu Canvas */
     .nav-top{
@@ -133,25 +152,7 @@
    .header-page__nav.is-active{  
         transform: none;
         transition: all .8s cubic-bezier(.19, 1, .22, 1);               
-    }
-
-    .header-page__list{  list-style-type: none;  }
-
-    .header-page__link{
-        display: block;
-        text-decoration: none;
-        color: white;
-        padding: 20px 30px;
-        margin-bottom: 40px;
-        background-color: rgba(252, 252, 252, 0.2);
-        border-radius: 10px;
-        text-align: center;
-        font-size: 1.2rem;
-        transition: all .3s ease;
-    }
-
-    .header-page__link:hover{ background-color: rgba(252, 252, 252, 0.4);}
-    
+    }   
 
     
 }
