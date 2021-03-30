@@ -1,18 +1,30 @@
 
 // --------- Ao carregar a página ---------
 
-var header = document.getElementById("header-page");
-var menu = document.getElementById("nav-top");
-var titulo = document.getElementById("header-page__title");
-var paragrafo = document.getElementById("header-page__subtitle");
+const header = document.getElementById("header-page");
+const menu = document.getElementById("nav-top");
+const titulo = document.getElementById("header-page__title");
+const paragrafo = document.getElementById("header-page__subtitle");
 
-onload = function animaHeader() {    
-    header.classList.remove("header-page--pre-load");
-    menu.classList.remove("nav-top--pre-load");    
-    titulo.classList.remove("header-page__title--pre-load");
-    paragrafo.classList.remove("header-page__subtitle--pre-load");  
+
+//Função auxiliar para adicionar ou remover classes a elementos
+function addRemoveClass(bool, className, ...elements){
+    if (bool) {
+        for( const element of elements ){
+            element.classList.add(className)
+        }
+    }else{
+        for( const element of elements ){
+            element.classList.remove(className)
+        }
+    }
 }
 
+
+
+onload = function animaHeader() {    
+    addRemoveClass(false, "pre-load" , header, menu, titulo, paragrafo)   
+}
 
 
 
@@ -22,7 +34,7 @@ onload = function animaHeader() {
 // --------- Ao scrollar a página ---------
 window.onscroll = () => scrollPage();
 
-function scrollPage() {
+function scrollPage(){
 
 // --------- ANIMAÇÃO DO NAV-TOP ---------
 
@@ -30,10 +42,10 @@ function scrollPage() {
     var btn = document.getElementsByClassName("nav-top__btn");
 
     if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
-        navbar.classList.add("nav-top--scroll");
+        navbar.classList.add("scroll");
         itensAddRemoveClass(btn, "btn--opaco", "btn--nav");
     } else {
-        navbar.classList.remove("nav-top--scroll");      
+        navbar.classList.remove("scroll");      
         itensAddRemoveClass(btn, "btn--nav", "btn--opaco");
     }
 
@@ -44,9 +56,9 @@ function scrollPage() {
     var grid = document.getElementById("main-content__grid");
 
     if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
-        grid.classList.remove("main-content__grid--pre-load");
+        addRemoveClass(false, "pre-load", grid)
     } else {
-        grid.classList.add("main-content__grid--pre-load");
+        addRemoveClass(true, "pre-load", grid)
     }
 
 
@@ -56,9 +68,9 @@ function scrollPage() {
     var mainContentPicture = document.getElementById("main-content__picture");
     
      if (document.body.scrollTop > 1800 || document.documentElement.scrollTop > 1800) {
-        mainContentPicture.classList.remove("main-content__picture--scroll");
+        addRemoveClass(false, "scroll" , mainContentPicture )        
     } else {
-        mainContentPicture.classList.add("main-content__picture--scroll");
+        addRemoveClass(true, "scroll" , mainContentPicture )
     }
 
 
@@ -68,13 +80,13 @@ function scrollPage() {
     var pictureSmallSection4 = document.getElementsByClassName("main-content__section--4__picture");
     var pictureBigSection4 = document.getElementsByClassName("main-content__section--4__picture--lg");
 
-    if (document.body.scrollTop > 2700 || document.documentElement.scrollTop > 2700) {        
-        removeOrAddClass(pictureSmallSection4, "main-content__section--4__picture--scroll", true);
-        removeOrAddClass(pictureBigSection4, "main-content__section--4__picture--lg--scroll", true);
+    if (document.body.scrollTop > 2700 || document.documentElement.scrollTop > 2700) {    
+        removeOrAddClass(pictureSmallSection4, "scroll", true);
+        removeOrAddClass(pictureBigSection4, "scroll", true);
         
     } else {       
-        removeOrAddClass(pictureSmallSection4, "main-content__section--4__picture--scroll", false);
-        removeOrAddClass(pictureBigSection4, "main-content__section--4__picture--lg--scroll", false);
+        removeOrAddClass(pictureSmallSection4, "scroll", false);
+        removeOrAddClass(pictureBigSection4, "scroll", false);
     }
 
 }
@@ -141,7 +153,6 @@ window.addEventListener('resize' , widthWindow)
         let width = window.innerWidth
         
         if(width > 554){
-            menuOffCanvas.classList.remove('is-active')
-            hamburguerLine.classList.remove('is-active')
+            addRemoveClass(false, "is-active" , menuOffCanvas, hamburguerLine)            
         }
     }

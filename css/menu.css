@@ -10,9 +10,10 @@
         z-index: 2;
         height: 100vh;
          width: 100vw; 
+        user-select: none;
         background: linear-gradient(to bottom, #7474bf, #348ac7);
         transform: translateX(-200%);
-        transition: all .8s cubic-bezier(0.63, -0.12, 0.43, 1.26);
+        transition: all .5s cubic-bezier(0.63, -0.12, 0.43, 1.26);
     }
 
     .header-page__hamburguer{  display: none;  }
@@ -58,14 +59,14 @@
         letter-spacing: 1.5px;    
     }
 
-    .nav-top--scroll{
+    .nav-top.scroll{
         background-color: var(--cor-primaria);
         height: 50px;             
     }
 
-    .nav-top--scroll .nav-top__btn{  font-size: 1rem ;  }
+    .nav-top.scroll .nav-top__btn{  font-size: 1rem ;  }
 
-    .nav-top--pre-load{
+    .nav-top.pre-load{
         opacity: 0;
         transform: scale(.5);
     }

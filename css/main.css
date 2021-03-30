@@ -23,7 +23,7 @@
     transition: all 2s ease;
 }
 
-.header-page--pre-load{  opacity: 0;  }
+.header-page.pre-load{  opacity: 0;  }
 
 .header-page__content{    
     box-sizing: border-box;
@@ -52,7 +52,7 @@
     animation: animate-cursor .7s 2s steps(40) infinite normal, animate-title 1.5s 2.5s steps(6) normal both; 
 }
 
-.header-page__title--pre-load{  opacity: 0;  }
+.header-page__title.pre-load{  opacity: 0;  }
 
 .header-page__subtitle{  
     opacity: 1;
@@ -64,7 +64,7 @@
     transition: opacity 1.5s 4.15s ease, transform 1.5s 4.15s ease; 
 }
 
-.header-page__subtitle--pre-load{
+.header-page__subtitle.pre-load{
   opacity:0;
   transform: scale(.95);
 }
@@ -120,7 +120,7 @@
     transition: opacity .8s .2s ease-in;
 }
 
-.main-content__picture--scroll{  opacity: 0;  }
+.main-content__picture.scroll{  opacity: 0;  }
 
 
 
@@ -138,7 +138,7 @@
     transition: all 2s ease;
 }
 
-.main-content__grid--pre-load{ 
+.main-content__grid.pre-load{ 
   opacity: 0;  
   transform: translateY(70px);
 }
@@ -264,7 +264,7 @@
     opacity: 1;
 }
 
-.main-content__section--4__picture--scroll{
+.main-content__section--4__picture.scroll{
     opacity: 0;
 }
 
@@ -282,7 +282,7 @@
     transition: opacity 1s .2s ease-in-out;
 }
 
-.main-content__section--4__picture--lg--scroll{
+.main-content__section--4__picture--lg.scroll{
     opacity: 0;
 }
 
