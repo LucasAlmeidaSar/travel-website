@@ -1,32 +1,43 @@
-export function addRemoveClass(bool, className, ...elements){
-    if (bool) {
-        for( const element of elements ){
-            element.classList.add(className)
+const classOfElements = {
+    add(className, ...elements){
+        for (const element of elements){
+            const inspector = element.length
+            inspector !== undefined ?  scanCollectionFound.add(className, element) : element.classList.add(className)
         }
-    }else{
-        for( const element of elements ){
-            element.classList.remove(className)
+    },
+
+    remove(className, ...elements){
+        for (const element of elements){
+            const inspector = element.length
+            inspector !== undefined ? scanCollectionFound.remove(className, element) : element.classList.remove(className)
         }
+    },
+
+    toggle(className, ...elements){
+        for (const element of elements){
+            const inspector = element.length
+            inspector !== undefined ? scanCollectionFound.toggle(className, element) : element.classList.toggle(className)
+        }
+    }
+
+}
+
+const scanCollectionFound = {
+    add(className, elements){
+        for (const element of elements) {
+            element.classList.add(className);  
+        } 
+    },
+    remove(className, elements){
+        for (const element of elements) {
+            element.classList.remove(className);    
+        }   
+    },
+    toggle(className, elements){
+        for (const element of elements) {
+            element.classList.toggle(className);   
+        }  
     }
 }
 
-
-export function itensAddRemoveClass(item, classAdd, classRemove) {
-    for (var i = 0; i < item.length; i++) {
-        item[i].classList.add(classAdd);
-        item[i].classList.remove(classRemove);
-    }
-}
-
-
-export function removeOrAddClass(item, className, boll) {
-    if(boll){
-        for (var i = 0; i < item.length; i++) {            
-            item[i].classList.remove(className);            
-        }
-    }else{
-        for (var i = 0; i < item.length; i++) {            
-            item[i].classList.add(className);
-        }
-    }    
-}
+export default classOfElements 

@@ -79,7 +79,8 @@
 @media only screen and (max-width: 870px){
 
     .nav-top__btn{  font-size: 1.1rem;  } 
-         .nav-top{  height: 60px;  }      
+    
+    .nav-top{  height: 60px;  }      
 
 }
 
